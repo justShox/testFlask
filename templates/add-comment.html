@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add comment</title>
+</head>
+<body>
+<h3 style="text-align: center">Comment section</h3>
+<div style="text-align: center">
+    <form action="/" method="post"></form>
+    {{ form.username.label }}
+    <br>
+    {{ form.username }}
+    <br>
+    <hr>
+    {{form.title.label}}
+    <br>
+    {{form.title}}
+    <br>
+    <hr>
+    {{form.comment.label}}
+    <br>
+    <hr>
+    {{form.comment}}
+    <br>
+    <hr>
+    <br>
+    {{form.confirm}}
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h3>Hello Welcome to SOF</h3>
+<a href="/user">Перейти в аккаунт</a>
+<ul>
+    {% for question in questions %}
+        <li><a href="/question/{{ question.id }}">{{ question.title }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
